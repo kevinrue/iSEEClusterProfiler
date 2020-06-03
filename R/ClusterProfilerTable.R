@@ -56,13 +56,12 @@ setMethod(".hideInterface", "ClusterProfilerTable", function(x, field) {
   # TODO: set a better default when there is no incoming selection
 
   if (!exists("row_selected", envir=envir, inherits=FALSE)) {
-    return("tab <- data.frame(GeneSet=character(0), p.value=numeric(0));")
-  }
+    return("tab <- data.frame(GeneSet=character(0), p.value=numeric(0))")
 
   cmds <- ""
 
   cmds <- c(cmds, sprintf(
-    ".results <- clusterProfiler::enrichGO(gene = geneids, OrgDb = %s, keyType = %s)",
+    ".results <- clusterProfiler::enrichGO(gene = row_selected$active, OrgDb = %s, keyType = %s)",
     deparse(iSEEOptions$get("orgdb.package")),
     deparse(iSEEOptions$get("orgdb.keytype"))))
 
