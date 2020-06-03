@@ -19,3 +19,5 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: https://github.com/kevinrue/iSEEClusterProfiler
+BugReports: https://github.com/kevinrue/iSEEClusterProfiler/issues
