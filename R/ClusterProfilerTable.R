@@ -57,6 +57,7 @@ setMethod(".hideInterface", "ClusterProfilerTable", function(x, field) {
 
   if (!exists("row_selected", envir=envir, inherits=FALSE)) {
     return("tab <- data.frame(GeneSet=character(0), p.value=numeric(0))")
+  }
 
   cmds <- ""
 
