@@ -1,10 +1,17 @@
 Package: iSEEClusterProfiler
 Title: ClusterProfiler Panels and Models for iSEE
 Version: 0.0.1
-Authors@R: c(person(given = "Kevin", family = "Rue-Albrecht", role = c("aut", "cre"), email = "kevinrue67@gmail.com", comment = c(ORCID = "0000-0003-3899-3872")))
+Authors@R: c(
+    person(given = "Kevin",
+           family = "Rue-Albrecht",
+           role = c("aut", "cre"),
+           email = "kevinrue67@gmail.com",
+           comment = c(ORCID = "0000-0003-3899-3872")))
 Description: iSEE panels and modes for the clusterProfiler package.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
+Depends: 
+    iSEE
