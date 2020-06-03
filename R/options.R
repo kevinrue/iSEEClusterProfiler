@@ -1,5 +1,6 @@
 # Credits: Adapted from knitr
 # https://github.com/yihui/knitr/blob/670a530b53d6cc5002797d54034ec8b07b74702c/R/defaults.R
+#' @importFrom stats setNames
 new_defaults = function(value = list()) {
   defaults = value
 

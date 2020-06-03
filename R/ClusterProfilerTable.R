@@ -25,6 +25,7 @@ setMethod(".fullName", "ClusterProfilerTable", function(x) "clusterProfiler Tabl
 setMethod(".panelColor", "ClusterProfilerTable", function(x) "#111111")
 
 #' @export
+#' @importFrom iSEE .textEval
 setMethod(".generateTable", "ClusterProfilerTable", function (x, envir) {
   cmds <- .create_enrichgo_table(envir)
 

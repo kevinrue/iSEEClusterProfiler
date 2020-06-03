@@ -22,5 +22,7 @@ Imports:
     S4Vectors
 Suggests: 
     knitr,
-    rmarkdown
+    rmarkdown,
+    scater,
+    scRNAseq
 VignetteBuilder: knitr
