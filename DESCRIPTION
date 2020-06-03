@@ -15,6 +15,11 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0
 Depends: 
     iSEE
+Imports: 
+    clusterProfiler,
+    GeneTonic,
+    methods,
+    S4Vectors
 Suggests: 
     knitr,
     rmarkdown
