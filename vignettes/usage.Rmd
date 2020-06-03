@@ -55,7 +55,7 @@ str(iSEEOptions$get())
 ```{r}
 initial <- list(
   ClusterProfilerTable(
-    RowSelectionSource = "RowDataPlot1"
+    RowSelectionSource = "RowDataPlot1", PanelWidth = 8L
   ),
   RowDataPlot()
 )
