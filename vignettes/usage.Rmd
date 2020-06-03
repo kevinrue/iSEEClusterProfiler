@@ -39,12 +39,25 @@ rowData(sce)$ave_count <- rowMeans(assay(sce, "tophat_counts"))
 rowData(sce)$n_cells <- rowSums(assay(sce, "tophat_counts") > 0)
 sce
 ```
+# Set global options
 
-# Launch the app
+```{r}
+iSEEOptions$set(
+  orgdb.package = "org.Mm.eg.db",
+  orgdb.key = NA_character_,      # use rownames 
+  orgdb.keytype = "SYMBOL"
+)
+str(iSEEOptions$get())
+```
+
+# Configure and launch the app
 
 ```{r}
 initial <- list(
-  ClusterProfilerTable(), RowDataTable(), RowDataPlot()
+  ClusterProfilerTable(
+    RowSelectionSource = "RowDataPlot1"
+  ),
+  RowDataPlot()
 )
 app <- iSEE(sce, initial = initial)
 ```
