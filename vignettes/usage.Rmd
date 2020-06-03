@@ -43,5 +43,8 @@ sce
 # Launch the app
 
 ```{r}
-app <- iSEE(sce)
+initial <- list(
+  ClusterProfilerTable(), RowDataTable(), RowDataPlot()
+)
+app <- iSEE(sce, initial = initial)
 ```
